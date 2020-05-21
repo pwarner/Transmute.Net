@@ -79,8 +79,8 @@ public sealed class DecrementAction
 public void CanCreateReducerDelegatesForSpecificActionTypes()
 {
     var reducer = new Reducer<int>()
-        .On<IncrementAction>((state, incremennt) => state + incrment.Value)
-        .On<DecrementAction>((state, decrement) => state - state.Value);
+        .On<IncrementAction>((state, increment) => state + incrment.Value)
+        .On<DecrementAction>((state, decrement) => state - decrement.Value);
 
     const int beginState = 13;
 
