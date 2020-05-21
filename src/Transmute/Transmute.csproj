@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Transmute.Net</PackageId>
+    <Authors>Pete Warner</Authors>
+    <Company>Pete Warner</Company>
+    <Product>Transmute.Net</Product>
+    <Description>Transmute.Net is a lightweight .Net Standard 2.0 utility for the reliable transformation of state, inspired by https://redux.js.org</Description>
+    <Copyright>© 2020 Pete Warner</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/pwarner/Transmute.Net</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
