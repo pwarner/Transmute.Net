@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Transmute.Net</PackageId>
+    <Title>Transmute.Net</Title>
     <Authors>Pete Warner</Authors>
     <Company></Company>
     <Product>Transmute.Net</Product>
@@ -11,7 +12,8 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>https://github.com/pwarner/Transmute.Net</RepositoryUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageProjectUrl>https://github.com/pwarner/Transmute.Net</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

@@ -6,8 +6,9 @@ There's a wealth of great information about the core concepts on that site, so p
 
 ##### The concept of Reducers
 ```csharp
-TState Reduce<TState>(TState state, object action);
+public delegate TState ReducerDelegate<TState, in TAction>(TState state, TAction action);
 ```
+
 A reducer is a pure function that takes an initial state value and an action value, and returns a new state value.
 Reducers are:
 - synchronous
@@ -95,7 +96,7 @@ I'd be surprised if your application state was that simple, so we'll look at com
 In this example we call the `On<TAction>` method to set a reducer function for an action of a specific type.
 
 ```csharp
-public Reducer<TState> On<TAction>(Func<TState, TAction, TState> reducer)
+public Reducer<TState> On<TAction>(ReducerDelegate<TState, TAction> reducer)
 { 
 }
 ```
